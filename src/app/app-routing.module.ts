@@ -1,7 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AdministradoresComponent } from './paginas/administradores/administradores.component';
+import { HomeComponent } from './paginas/home/home.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: '', component: HomeComponent },
+  { path: 'administradores', component: AdministradoresComponent },
+  //{ path: '**', redirectTo: '/dashboard' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
