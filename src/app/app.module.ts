@@ -8,6 +8,7 @@ import { HeaderComponent } from './paginas/header/header.component';
 import { FooterComponent } from './paginas/footer/footer.component';
 import { SidebarComponent } from './paginas/sidebar/sidebar.component';
 import { AdministradoresComponent } from './paginas/administradores/administradores.component';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { AdministradoresComponent } from './paginas/administradores/administrado
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     AppRoutingModule
   ],
   providers: [],
